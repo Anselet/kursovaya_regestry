@@ -1,0 +1,123 @@
+
+{
+    "1":{
+        "Заявки": {
+            "tableName": "applications",
+            "rights": "CRU"
+            },
+        "Акты": {
+            "tableName": "acts",
+             "rights": "CRU"
+             },
+        "Данные о гражданах":{ 
+            "tableName": "citizens",
+            "rights": "CRU"
+            },
+        "Контакты": {
+            "tableName": "contacts",
+            "rights": "CRU"
+            },
+        "Паспорта":{ 
+            "tableName": "passport",
+            "rights": "CRU"
+            },
+        "Свидетельства":{ 
+            "tableName": "certificates",
+            "rights": "CRU"
+            },
+        "Прописка": {
+            "tableName": "registration",
+            "rights": "CRU"
+            },
+        "Должности": {
+            "tableName": "post",
+            "rights": "CR"
+            },
+        "Сотрудники": {
+            "tableName": "employees",
+            "rights": "CR"
+            },
+        "Статус заявки": {
+            "tableName": "appstatuses",
+            "rights": "CRU"
+            },
+        "Статусы": {
+            "tableName": "appstatus",
+            "rights": "CRU"
+            },
+        "Тип заявки": {
+            "tableName": "apptype",
+            "rights": "CRU"
+            },
+        "Тип акта": {
+            "tableName": "acttype",
+            "rights": "CRU"
+            },
+        "Тип свидетельства": {
+            "tableName": "certtype",
+            "rights": "CRU"
+            },
+        "Родственные связи": {
+            "tableName": "relations",
+            "rights": "CRU"
+            },
+        "Тип родства": {
+            "tableName": "reltype",
+            "rights": "CRU"
+            }
+        },
+    "2":{
+        "Заявки": {
+            "tableName": "applications",
+            "rights": "CRU"
+        },
+        "Акты": {
+            "tableName": "acts",
+            "rights": "CRU"
+        },
+        "Свидетельства":{
+            "tableName": "certificates",
+            "rights": "CRU"
+        },
+        "Контакты": {
+            "tableName": "contacts",
+            "rights": "CRU"
+        },
+        "Паспорта":{
+            "tableName": "passport",
+            "rights": "CRU"
+        },
+        "Данные о гражданах":{
+            "tableName": "citizens",
+            "rights": "CR"
+        },
+        "Прописка": {
+            "tableName": "registration",
+            "rights": "CR"
+        },
+        "Статус заявки": {
+            "tableName": "appstatuses",
+            "rights": "CR"
+        },
+        "Тип заявки": {
+            "tableName": "apptype",
+            "rights": "R"
+        },
+        "Тип акта": {
+            "tableName": "acttype",
+            "rights": "R"
+        },
+        "Тип свидетельства": {
+            "tableName": "certtype",
+            "rights": "R"
+        },
+        "Тип родства": {
+            "tableName": "reltype",
+            "rights": "R"
+        },
+        "Статусы": {
+            "tableName": "appstatus",
+            "rights": "R"
+        }
+    }
+}

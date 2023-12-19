@@ -1,0 +1,49 @@
+.container
+{
+    
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inp{
+    background-color: darkgrey;
+    border: none;
+    color: white;
+    width: 120px;
+    cursor: pointer;
+    padding: 5px;
+
+}
+.username, .password {
+    margin-left: 30%;
+    margin-right: 30%;
+}

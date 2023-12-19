@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleMain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body >
+    <script type="module" src="main.js"></script>
+
+    <div class="container">
+    <div class="avatar">
+        <img src="pngtree-man-avatar-wearing-gray-suit-png-image_6102786.png" alt="Photo">
+    </div>
+        <div class="select" >
+        <div class="welcom_text">
+            <h4 id="welcom_text">Добро пожаловать!</h4>
+        </div>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id = "table_select">
+            <option selected>Выберите таблицу для работы</option>
+            <!-- <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option> -->
+        </select>
+        </div>
+    </div>
+
+    <div class="add_button">
+        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#createModal" id="add_button">
+            Добавить новую запись
+        </button>
+        <div id="search-div">
+            <input type="text" id="search_field" placeholder="Поиск">
+            <img src="9349901.png" class="search_img" id="search_img"/>
+        </div>
+    </div>
+    <div class="table_db">
+        <table class="table table-light table-hover table-bordered" id="table" data-toolbar="#toolbar"
+               data-search="true"
+               data-show-refresh="true"
+               data-show-toggle="true"
+               data-show-fullscreen="true"
+               data-show-columns="true"
+               data-show-columns-toggle-all="true"
+               data-detail-view="true"
+               data-show-export="true"
+               data-click-to-select="true"
+               data-detail-formatter="detailFormatter"
+               data-minimum-count-columns="2"
+               data-show-pagination-switch="true"
+               data-pagination="true"
+               data-id-field="id"
+               data-page-list="[10, 25, 50, 100, all]"
+               data-show-footer="true"
+               data-side-pagination="server"
+               data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data">
+                <thead class="table-dark" id="table_head">
+                    
+                </thead>
+                <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="createModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавление новой записи</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal_body">
+                    <p>Заполните поля для новой записи</p>
+                    <form id="save_form" ></form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" id="modal_save">Сохранить</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modal_close">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="createModalUpdate">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Изменение записи</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal_bodyUpdate">
+                    <p>Заполните поля записи</p>
+                    <form id="save_formUpdate" ></form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" id="modal_saveUpdate">Изменить</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modal_closeUpdate">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    
+  </body>
+</html>
